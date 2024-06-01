@@ -31,11 +31,13 @@ bob.color("black")
 bob.speed("fastest")
 bob.penup()
 
+# draw the dots
 for x in range(-250, 300, 50):
     for y in range(-250, 300, 50):
         bob.goto(x, y)
         bob.dot(20, random.choice(rgb_colors))
 
+# preserve screen
 screen.exitonclick()
 
 
